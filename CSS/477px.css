@@ -1,0 +1,79 @@
+@media screen and (max-width:477px) {
+    main::before
+    {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.349);
+    }
+    main
+    {
+        background-image: url('../IMAGES/Tree.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main .container
+    {
+        margin-top: 3rem;
+        width: 31rem;
+    }
+    .container .header
+    {
+        height: 5.5rem;
+    }
+    .container .header #heading_of_the_app
+    {
+        margin: 0.7rem;
+        letter-spacing: .20rem;
+        word-spacing: .10rem;
+        font-size: 2.6rem;
+    }
+    .container .header #heading_of_the_app #check_List
+    {
+        position: absolute;
+        left: 16.9rem;
+        top: 0.6rem;
+        font-size: 2.6rem;
+    }
+    .container .inputContainer
+    {
+        margin-top: 1.7rem;
+    }
+    .container .inputContainer #list
+    {
+        padding: .37rem;
+        font-size: 1.7rem;
+        width: 25rem;
+        border-radius: .7rem;
+        letter-spacing: 0.08rem;
+    }
+    .container .inputContainer #list:focus
+    {
+        box-shadow: 0px 0px .4rem .14rem rgb(187, 122, 240);
+    }
+    .container .inputContainer #add
+    {
+        font-size: 2.5rem;
+        margin-left: .85rem;
+    }
+    .container .listContainer
+    {
+        max-height: 30rem;
+    }
+    .container .listContainer .individual_list
+    {
+        font-size: 2.8rem;
+    }
+    .container .listContainer .delete_icon
+    {
+        top: .55rem;
+    }
+    .container .pending #pendingTasks
+    {
+        padding: .3rem 0rem .7rem .85rem;
+        font-size: 1.4rem;
+    }
+    .container .pending #clearAll
+    {
+        font-size: 1.2rem;
+    }
+}

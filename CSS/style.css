@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+By Default..
+    1rem = 16px 
+We can change this..for our easy understanding
+    1rem = 10px 
+*/
+html
+{
+    font-size: 10px;
+}
+::-webkit-scrollbar{
+    width: .95rem;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-track
+{
+    background-color: rgb(211, 211, 211);
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: rgb(131, 103, 255);
+    border-radius: 1rem;
+}
+main::before
+{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+main
+{
+    position: relative;
+    background-image:url('../IMAGES/Man of Steel.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .container
+{
+    background-color: rgb(70, 69, 69);
+    width: 50rem;
+    height: auto;
+    box-shadow: 0px 0px .6rem .4rem rgb(104, 118, 175);
+    box-shadow: 0px 0px 2rem .4px rgb(203, 214, 255);
+    z-index: 1;
+    border-radius: 1.3rem;
+}
+.container .header
+{
+    border-bottom: 1.7px solid rgb(189, 173, 188);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .header #heading_of_the_app
+{
+    color: white;
+    margin: 1rem;
+    letter-spacing: .13rem;
+    word-spacing: .1rem;
+    font-size: 2.8rem;
+    position: relative;
+    font-family: "Audiowide", sans-serif;
+    text-shadow: .3rem .3rem .3rem #ababab;
+}
+.container .header #heading_of_the_app #check_List
+{
+    color: chartreuse;
+    position: absolute;
+    left: 17rem;
+    top: .35rem;
+    font-size: 3rem;
+    text-shadow: none;
+}
+.container .inputContainer
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.7rem;
+}
+.container .inputContainer #list
+{
+    padding: .35rem;
+    font-size: 1.8rem;
+    width: 35rem;
+    font-weight: bold;
+    border: .1rem solid black;
+    border-radius: .7rem;
+    outline: none;
+    letter-spacing: 0.07rem;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Jura', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+.container .inputContainer #list:focus
+{
+    box-shadow: 0px 0px .5rem .5rem rgb(187, 122, 240);
+}
+.container .inputContainer #add
+{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(80, 79, 79);
+    margin-left: .5rem;
+    border-radius: .7rem;
+    font-weight: bold;
+    border: 0.05rem solid white;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+.container .inputContainer #add:hover
+{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0rem 0rem .5ren .1ren rgb(255, 255, 255);
+}
+.container .inputContainer #add:active
+{
+    transition: none;
+    color: rgb(130, 131, 131);
+}
+.container .listContainer
+{
+    border: .15rem solid rgb(158, 47, 158);
+    height: auto;
+    width: 97%;
+    margin: 1.7rem auto;
+    margin-bottom: 1rem;
+    padding: .85rem;
+    max-height: 33rem;
+    overflow-y: auto;
+}
+.container .listContainer .individual_list
+{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Tangerine', cursive;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    font-size: 3rem;
+    word-spacing: 0.04rem;
+    padding: .45rem;
+    position: relative;
+    border: .1rem solid black;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+.container .listContainer .individual_list:hover
+{
+    background-color: rgb(189, 188, 188);
+}
+.container .listContainer .delete_icon
+{
+    position: absolute;
+    top: .75rem;
+    right: 0rem;
+    cursor: pointer;
+    visibility: hidden;
+    transition: all 0.1s ease-in-out;
+}
+.container .listContainer .delete_icon:hover
+{
+    transform: scale(1.2,1.2);
+    color: red;
+}
+.container .pending
+{
+    display: flex;
+    flex-direction: row; /* By default direction in flexbox is row*/
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.container .pending #pendingTasks
+{
+    padding: .5rem 0rem .7rem .75rem;
+    color: white;
+    letter-spacing: .1rem;
+    word-spacing: .1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+}
+.container .pending #clearAll
+{
+    outline: none;
+    cursor: pointer;
+    border: 0.03rem solid rgb(221, 221, 221);
+    color: white;
+    background-color: rgb(131, 103, 255);
+    font-weight: bold;
+    padding: 0rem .65rem;
+    margin-right: .5rem;
+    letter-spacing: .1rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    font-family: 'Nunito', sans-serif;
+    transition: background-color 0.25s ease-in-out;
+}
+.container .pending #clearAll:hover
+{
+    background-color: rgb(104, 72, 248);
+}
+.container .pending #clearAll:active
+{
+    color: rgb(196, 196, 196);
+}
+
+/* RESPONSIVE SITE DESIGNING GOES HERE */
+@media screen and (max-width:919px) {
+    main .container
+    {
+        width: 45rem;
+    }
+}
