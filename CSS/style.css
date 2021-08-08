@@ -149,6 +149,7 @@ main .container
     padding: .85rem;
     max-height: 33rem;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 .container .listContainer .individual_list
 {
@@ -158,13 +159,13 @@ main .container
     letter-spacing: .2rem;
     font-size: 3rem;
     word-spacing: 0.04rem;
-    padding: .45rem;
     position: relative;
     border: .1rem solid black;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;    
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     border-radius: .5rem;
+    padding: .45rem;
 }
 .container .listContainer .individual_list:hover
 {
@@ -183,6 +184,11 @@ main .container
 {
     transform: scale(1.2,1.2);
     color: red;
+}
+.container .listContainer .delete_icon:active
+{
+    transform: scale(1.2,1.2);
+    color: rgb(255, 38, 38);
 }
 .container .pending
 {
