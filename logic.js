@@ -75,7 +75,7 @@ function showNotes() {
 }
 // Delete individual list Function
 function deleteIT(no) {
-    say("Do you reallyyy want to delete it ?..");
+    say("Do you really want to delete it ?..");
     confirmation = confirm("It will we deleted permenantly ! , Do you want to contiue ? ");
 
     if (confirmation) {
